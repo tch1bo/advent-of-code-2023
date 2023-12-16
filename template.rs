@@ -1,18 +1,18 @@
 #![allow(dead_code)]
 use std::{collections::HashMap, collections::HashSet, env, fs};
 
-fn parse_space_separated_nums(line: &str) -> Vec<i64> {
+fn parse_space_separated_nums(line: &str) -> Vec<u64> {
     line.split(" ")
         .filter(|chunk| !chunk.is_empty())
-        .map(|chunk| -> i64 { chunk.parse().unwrap() })
+        .map(|chunk| -> u64 { chunk.parse().unwrap() })
         .collect()
 }
 
-fn part_one(content: &str) -> i64 {
+fn part_one(content: &str) -> u64 {
     0
 }
 
-fn part_two(content: &str) -> i64 {
+fn part_two(content: &str) -> u64 {
     0
 }
 
